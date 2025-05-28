@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SM Kaixepa</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Pre-Loader -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo"><a href="./index.html"><img class="logo_img" src="./assets/images/Brocken Hills Resources-2.png" alt=""></a></div>
+        <ul class="main_nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">Sobre nós</a></li>
+            <li><a href="./projects.html">Projectos</a></li>
+            <li><a href="./contact.html" class="active_nav">Contactos</a></li>
+        </ul>
+        <div class="offScreenMenu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Sobre nós</a></li>
+                <li><a href="./projects.html">Projectos</a></li>
+                <li><a href="./contact.html" class="active_nav_ham">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero_about">
+        <div class="overlay_about"></div>
+        <img decoding="async" class="img-slide active" src="./assets/images/IMG-20250130-WA0073.jpg" >
+        <img decoding="async" class="img-slide" src="./assets/images/IMG-20250130-WA0062.jpg" >
+        <img decoding="async" class="img-slide" src="./assets/images/IMG-20250130-WA0053.jpg" >
+        <div class="home_text_container">
+            <p class="hero_par_head">Nossos <br><span>Contactos</span></p>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <!-- Google Maps -->
+    <section id="google_maps">
+        <p class="google_maps_head">Nossa localização</p>
+        <div class="google_maps_container" style="height: 450px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.410271634894!2d13.558333714435865!3d-14.918735072646597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bcb8e66fc511b8b%3A0x4af9e5697e638496!2sLubango%2C%20Angola!5e0!3m2!1sen!2sao!4v1716887789123!5m2!1sen!2sao" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact_section">
+        <div class="contact_container">
+            <div class="overall_container">
+                <div class="contact_section_head">
+                    <p class="projects_head overall_heads contact_text">Vamos Trabalhar Juntos!</p>
+                </div>
+                <div class="contact_grid_container">
+                    <div class="contact_details">
+                        <a href="mailto:info@smkaixepa.com"><i class="fa-solid fa-envelope"></i>info@smkaixepa.com</a>
+                        <a href="tel:+244923000000"><i class="fa-solid fa-phone"></i>+244 923 000 000</a>
+                    </div>
+                    <div class="contact_form_container">
+                        <form id="contact_form" class="contact_form">
+                            <input type="text" id="name" required placeholder="Nome">
+                            <input type="email" id="email" required placeholder="Email">
+                            <input type="number" id="phone" required  placeholder="Telefone">
+                            <textarea id="message" rows="4" required placeholder="Mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="overall_container">
+            <div class="footer_grid">
+                <div class="footer_logo">
+                    <img src="./assets/images/Brocken Hills Resources-2-footer.png" alt="">
+                </div>
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <div class="column">
+                            <h4>Sobre</h4>
+                            <a href="./projects.html">Nossos Projectos</a>
+                        </div>
+                        <div class="column">
+                            <h4>Apoio</h4>
+                            <a href="./contact.html">Contactos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Todos os direitos reservados © 2025</p>
+                <div class="social-icons">
+                    <a href="mailto:info@smkaixepa.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-square-facebook"></i></a>
+                    <a href="#"><i class="fab fa-square-instagram"></i></a>
+                    <a href="#"><i class="fab fa-square-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
